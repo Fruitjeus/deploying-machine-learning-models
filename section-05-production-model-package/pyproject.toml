@@ -1,9 +1,9 @@
-[build-system]
-requires = [
-    "setuptools>=42",
-    "wheel"
-]
-build-backend = "setuptools.build_meta"
+#[build-system]
+#requires = [
+#    "setuptools>=42",
+#    "wheel"
+#]
+#build-backend = "setuptools.build_meta"
 
 [tool.pytest.ini_options]
 minversion = "2.0"
@@ -47,3 +47,27 @@ line_length = 100
 lines_between_sections = 1
 known_first_party = "sentry"
 skip = "migrations"
+
+[tool.poetry]
+name = "section-05-production-model-package"
+version = "0.1.0"
+description = ""
+authors = ["Jeremy Eu <jeu1993@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7.12,<3.8.0"
+numpy = "^1.20.0"
+pandas = "^1.2.0"
+pydantic = "^1.8.1"
+scikit-learn = "^0.24.0"
+strictyaml = "^1.3.2"
+"ruamel.yaml" = "0.16.12"
+feature-engine = "^1.0.2"
+joblib = "^1.0.1"
+
+[tool.poetry.dev-dependencies]
+tox = "^3.24.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

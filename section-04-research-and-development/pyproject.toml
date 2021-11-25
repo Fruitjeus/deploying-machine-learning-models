@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "section-04-research-and-development"
+version = "0.1.0"
+description = ""
+authors = ["Jeremy Eu <jeu1993@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.7"
+feature-engine = "1.0.2"
+matplotlib = "3.3.4"
+ipykernel = "^6.4.2"
+seaborn = "0.11.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

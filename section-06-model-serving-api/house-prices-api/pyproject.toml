@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "house-prices-api"
+version = "0.1.0"
+description = ""
+authors = ["Jeremy Eu <jeu1993@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7.1,<4.0"
+uvicorn = "^0.11.3"
+fastapi = "^0.64.0"
+python-multipart = "^0.0.5"
+typing_extensions = "^3.7.4"
+loguru = "^0.5.3"
+pydantic = "^1.8.1"
+tid-regression-model = "3.0.1"
+
+[tool.poetry.dev-dependencies]
+tox = "^3.24.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
